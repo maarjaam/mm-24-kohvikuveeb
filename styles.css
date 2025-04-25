@@ -1,0 +1,82 @@
+    
+    @import url('https://fonts.googleapis.com/css2?family=Borel&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #fff;
+        color: #fff;
+        top: 0px;
+    }
+
+    h1,
+    h2 {
+        font-family: "Borel", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .logo img {
+        height: 55px;
+        width: auto;
+    }
+
+    nav a {
+        color: #2b2828;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        background-color: rgb(109, 104, 104);
+    }
+
+    .hero {
+        background: #f5f5f5;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .section:nth-child(even) {
+        background: #f0f0f0;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        flex: 1 1 300px;
+    }
+
+    .section .text {
+        flex: 1 1 300px;
+        padding: 1rem;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .section {
+            flex-direction: column;
+        }
+    }
