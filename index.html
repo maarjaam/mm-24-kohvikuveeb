@@ -9,25 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Hamburger menu styles (add to your styles.css for production) -->
 </head>
 
 <body>
     <header>
+        <!-- Logo Section -->
         <a href="#hero" class="logo">
-            <img src="images/Pagari_Liisu_logo_left_jpeg.webp"><span>Logo tekst</span>
+            <img src="images/Pagari_Liisu_logo_left_jpeg.webp" alt="Logo">
         </a>
-        <nav>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="nav">
             <a href="#hero">Home</a>
-            <a href="">About</a>
+            <a href="#">About</a>
             <a href="#footer">Contact</a>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <div class="hero" id="hero">
         <h1>Welcome to Our Website</h1>
         <p>Your tagline or mission statement goes here.</p>
     </div>
 
+    <!-- Content Sections -->
     <div class="section">
         <img src="https://via.placeholder.com/400" alt="Placeholder Image">
         <div class="text">
@@ -44,9 +57,20 @@
         <img src="https://via.placeholder.com/400" alt="Placeholder Image">
     </div>
 
+    <!-- Footer -->
     <footer id="footer">
         <p>&copy; 2025 Simple Website. All rights reserved.</p>
     </footer>
+
+    <!-- Hamburger menu toggle script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
