@@ -74,8 +74,9 @@
         padding: 1rem;
     }
 
+    /* Hamburger menu styles */
     .menu-toggle {
-        display: none;
+        /* make hamburger disapear by default (gets overridden on mobile) display: none; */
         flex-direction: column;
         cursor: pointer;
         gap: 5px;
@@ -93,10 +94,13 @@
     }
 
     @media (max-width: 768px) {
+
+        /* makes Hamburger menu appear on mobile */
         .menu-toggle {
             display: flex;
         }
 
+        /* this is how hamburger menu items look when they are opened on mobile*/
         nav {
             display: none;
             flex-direction: column;
@@ -108,6 +112,7 @@
             padding: 1rem;
         }
 
+        /* makes list items appear on mobile after clicking */
         nav.active {
             display: flex;
         }
